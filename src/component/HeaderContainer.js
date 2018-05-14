@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { Layout,Menu,Icon,Button ,Dropdown} from 'antd';
+import { Layout,Menu,Icon,Button ,Dropdown,Avatar,Badge} from 'antd';
 const {Header}=Layout;
 const SubMenu=Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -51,8 +51,11 @@ class HeaderContainer extends Component{
                         <Icon  type={this.state.fold ? 'menu-unfold' : 'menu-fold'} />
                     </a>
                 </Dropdown>
-
+                <span style={{ marginLeft: 24 }}>
+      <Badge count={0}><Avatar shape="square" icon="user" /></Badge>
+    </span>
             </div>
+
         </Header>)
     }
 }
