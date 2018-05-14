@@ -1,14 +1,16 @@
+import React,{Component} from 'react'
 import { Layout } from 'antd';
-import 'antd/dist/antd.css'
-const { Header, Footer, Sider, Content } = Layout;
-export function Layout() {
+import 'antd/dist/antd.css';
+import ContentConstomer from './ContentConstomer'
+const { Header, Footer, Sider} = Layout;
+export function _Layout() {
     return(   <Layout>
         <Header>Header</Header>
         <Layout>
-            <Content>Content</Content>
+            <ContentConstomer>Content</ContentConstomer>
             <Sider>Sider</Sider>
         </Layout>
         <Footer>Footer</Footer>
     </Layout>)
 }
-export default Layout
+export default _Layout
