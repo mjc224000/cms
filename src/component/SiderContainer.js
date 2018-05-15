@@ -23,8 +23,8 @@ class _Sider extends Component{
                     style={{ height: '100%' }}
                 >
                     <SubMenu key="sub1" title={<span><Icon type="user" />subnav 1</span>}>
-                        <Menu.Item key="1"><a href={'/a'}>FormNormal</a></Menu.Item>
-                        <Menu.Item key="2">option2</Menu.Item>
+                        <Menu.Item key="1"><Link to={'/FormNormal'}>FormNormal</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to={'/FormRegistration'}>FormNormal</Link></Menu.Item>
                         <Menu.Item key="3">option3</Menu.Item>
                         <Menu.Item key="4">option4</Menu.Item>
                     </SubMenu>
