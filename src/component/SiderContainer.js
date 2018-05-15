@@ -1,8 +1,10 @@
 import React,{Component} from 'react'
+import { BrowserRouter as Router, Route, Link, } from "react-router-dom";
 import { Layout,Menu,Icon } from 'antd';
 import '../style/SiderContainer.css'
 const {Sider}=Layout;
 const SubMenu=Menu.SubMenu;
+
 class _Sider extends Component{
     constructor(){
         super();
@@ -21,7 +23,7 @@ class _Sider extends Component{
                     style={{ height: '100%' }}
                 >
                     <SubMenu key="sub1" title={<span><Icon type="user" />subnav 1</span>}>
-                        <Menu.Item key="1">option1</Menu.Item>
+                        <Menu.Item key="1"><a href={'/a'}>FormNormal</a></Menu.Item>
                         <Menu.Item key="2">option2</Menu.Item>
                         <Menu.Item key="3">option3</Menu.Item>
                         <Menu.Item key="4">option4</Menu.Item>
