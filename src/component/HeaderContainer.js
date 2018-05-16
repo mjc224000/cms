@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import { Layout,Menu,Icon,Button ,Dropdown,Avatar,Badge} from 'antd';
+import { BrowserRouter as Router, Route, Link, } from "react-router-dom";
 const {Header}=Layout;
 const SubMenu=Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -52,7 +53,7 @@ class HeaderContainer extends Component{
                     </a>
                 </Dropdown>
                 <span style={{ marginLeft: 24 }}>
-      <Badge count={0}><Avatar shape="square" icon="user" /></Badge>
+                    <Link to={'/'} >   <Badge count={0}><Avatar shape="square" icon="user" /></Badge></Link>
     </span>
             </div>
 
