@@ -12,6 +12,7 @@ export function _Layout() {
         <Layout>
           <SiderContainer/>
             <ContentContainer/>
+            {this.props.children}
         </Layout>
         <Footer>Footer</Footer>
     </Layout>)
