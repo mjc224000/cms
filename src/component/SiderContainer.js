@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import { BrowserRouter as Router, Route, Link, } from "react-router-dom";
 import { Layout,Menu,Icon } from 'antd';
-import '../style/SiderContainer.css'
+import '../style/SiderContainer.less'
 const {Sider}=Layout;
 const SubMenu=Menu.SubMenu;
 
