@@ -243,4 +243,6 @@ class RegistrationForm extends React.Component {
 }
 
 const WrappedRegistrationForm = Form.create()(RegistrationForm);
-export default WrappedRegistrationForm;
+export default function () {
+    return( <Card style={{width:'600px'}}><WrappedRegistrationForm/> </Card>)
+}
