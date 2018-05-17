@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumb, Switch, Icon } from 'antd';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import themes from '../style/theme';
 
 class BreadcrumbCustom extends React.Component {
