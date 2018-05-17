@@ -1,0 +1,45 @@
+@width=50px;
+.carousel-wrap{
+  position: relative;
+  transform-style: preserve-3d;
+  ul{
+    padding: 0;
+    margin: 0;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+width: 100px;
+    height: 100px;
+transform: rotateX(0deg);
+    li{
+      position: absolute;
+      list-style: none;
+      width:100px;
+      height: 100px;
+      border: 1px solid black;
+      transition:2s ease-in;
+    }
+    li:nth-child(1){
+      transform:rotateX(90deg) translateZ(-100px) ;
+    }
+    li:nth-child(2){
+      transform: translateZ(-100px);
+    }
+    li:nth-child(3){
+      transform: translateZ(100px);
+    }
+  li:nth-child(4){
+    transform: rotateX(90deg) translateZ(100px);
+  }
+    li:nth-child(5){
+      transform: rotateY(90deg) translateZ(100px);
+    }
+    li:nth-child(6){
+      transform: rotateY(90deg) translateZ(-100px);
+    }
+
+  }
+
+}
