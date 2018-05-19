@@ -2,18 +2,17 @@ import React,{Component} from 'react'
 import { Layout } from 'antd';
 import 'antd/dist/antd.css';
 import Header from './HeaderContainer';
-import ContentContainer from './ContentContainer';
-import SiderContainer from './SiderContainer';
+/*import ContentContainer from './ContentContainer';
+import SiderContainer from './SiderContainer';*/
+import Route from './route'
 import '../style/Layout.css'
 const {  Footer, Sider} = Layout;
 export function _Layout() {
     return(   <Layout>
         <Header/>
-        <Layout>
-          <SiderContainer/>
-            <ContentContainer/>
 
-        </Layout>
+          <Route/>
+
         <Footer>Footer</Footer>
     </Layout>)
 }

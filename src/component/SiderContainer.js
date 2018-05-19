@@ -40,6 +40,9 @@ class _Sider extends Component{
                         <Menu.Item key="11">option11</Menu.Item>
                         <Menu.Item key="12">option12</Menu.Item>
                     </SubMenu>
+                    <SubMenu key="sub3" title={<span><Icon type="notification" />Pages</span>}>
+                        <Menu.Item key={13}><Link to={'./Pages/Login'}>LoginPage </Link></Menu.Item>
+                    </SubMenu>
                 </Menu>
             </Sider>
         )
